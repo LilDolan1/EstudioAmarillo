@@ -1,0 +1,166 @@
+* {
+    Margin:0;
+    padding:0;
+}
+
+.body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+	background-color: #F1BB1D;
+	position: sticky;
+	top: 0px;
+}
+
+.header{
+    padding: 5px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    margin-left: 142px;
+}
+
+.nav{
+    text-align: right;
+    margin-right: 142px;
+}
+a{
+    padding: 0px 15px;
+}
+
+.quienesSomos{
+	font-size: 30px;
+	text-align: center;
+}
+
+.bio{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 255px;
+}
+
+.fotoInicio{
+    justify-content: space-between;
+    text-align: center;
+}
+
+.foto1{
+    display: inline;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.foto2{
+    display: inline;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.foto3{
+    display: inline;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+.footer{
+    background-color: #707070;
+    padding: 20px;
+    
+}
+
+.footer2{
+    margin-left: 42px; 
+}
+
+
+
+
+
+#mainContainer{
+    margin: 150px auto;
+    width: 700px;
+    background-color: #F8F8F8;
+}
+
+table{
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 25px;
+}
+
+thead{
+    background-color: #F1BB1D;
+    border-bottom: #707070 solid 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: #707070;
+    color: white;
+}
+
+form{
+    background-color: #F8F8F8;
+    padding: 20px;
+    margin: 0px auto;
+    width: 440px;
+    border-radius: 3px;
+}
+
+input, textarea{
+    outline: none;
+    border: 1px;
+    border-radius: 2px;
+    background-color: white;
+    padding: 20px;
+    width: 380px;
+    border-color: #F1BB1D;
+    margin: 5px auto;
+}
+
+.cajas{
+    text-align: center;
+}
+
+.boton1{
+    outline: none;
+    border: 1px;
+    border-radius: 2px;
+    background-color: #F1BB1D;
+    padding: 20px;
+    width: 200px;
+    margin: 5px auto;
+
+}
+
+.boton2{
+    outline: none;
+    border: 1px;
+    border-radius: 2px;
+    background-color: #707070;
+    padding: 20px;
+    width: 200px;
+    margin: 5px auto;
+}
+
+.botones{
+text-align: center;
+}
+
+.label{
+    text-align: center;
+}
+
