@@ -1,35 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400;500&display=swap');
+
+
 * {
     Margin:0;
     padding:0;
+    font-family: "Montserrat";
+    font-weight: 500;
 }
 
-.body {
+.contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header header header header"
+                        "biografia biografia fotoInicio fotoInicio"
+                        "footer footer footer footer";
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: grid;
+    background-color: #F1BB1D;
+    height: 100px;
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+    grid-area: header;
 }
 
-.header{
-	background-color: #F1BB1D;
-	position: sticky;
-	top: 0px;
+.flotante {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
 }
 
-.header{
-    padding: 5px;
+#logo {
+    cursor: pointer;
+    margin-right: auto;
 }
 
-h2{
-    font-family: 'Montserrat', sans-serif;
-    margin: 5px;
-    margin-left: 142px;
+.logo {
+    width: 100%;
 }
 
-.nav{
-    text-align: right;
-    margin-right: 142px;
+.nav_links {
+    list-style: none;
 }
-a{
-    padding: 0px 15px;
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #F1BB1D;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #F1BB1D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: white;
+}
+
+.flotante {
+    background-color: #f8f8f8;
+    height: 40px;
+    margin: 30px 10%;
+    
 }
 
 .quienesSomos{
@@ -40,12 +94,16 @@ a{
 .bio{
     font-size: 20px;
     text-align: center;
-    margin: 20px 255px;
+}
+
+.biografia {
+    grid-area: biografia;
 }
 
 .fotoInicio{
     justify-content: space-between;
     text-align: center;
+    grid-area: fotoInicio;
 }
 
 .foto1{
@@ -71,7 +129,7 @@ a{
 .footer{
     background-color: #707070;
     padding: 20px;
-    
+    grid-area: footer;
 }
 
 .footer2{
@@ -81,11 +139,26 @@ a{
 
 
 
+.contenedor2 {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header header header header"
+                        "mainContainer mainContainer mainContainer2 mainContainer2"
+                        "footer footer footer footer";
+}
 
-#mainContainer{
+.mainContainer{
     margin: 150px auto;
     width: 700px;
     background-color: #F8F8F8;
+    grid-area: mainContainer;
+}
+
+.mainContainer2{
+    margin: 150px auto;
+    width: 700px;
+    background-color: #F8F8F8;
+    grid-area: mainContainer2;
 }
 
 table{
@@ -162,5 +235,22 @@ text-align: center;
 
 .label{
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor2 {
+        grid-template-areas: "header header header header"
+                            "mainContainer mainContainer mainContainer mainContainer"
+                            "mainContainer2 mainContainer2 mainContainer2 mainContainer2"
+                            "footer footer footer footer";
+    }
+    
+    .contenedor {
+        grid-template-areas: "header header header header"
+                        "biografia biografia biografia biografia"
+                        "fotoInicio fotoInicio fotoInicio fotoInicio"
+                        "footer footer footer footer";
+                        
+    
 }
 
