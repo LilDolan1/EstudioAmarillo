@@ -12,8 +12,9 @@
     display: grid;
     gap: 10px;
     grid-template-areas: "header header header header"
-                        "biografia biografia fotoInicio fotoInicio"
-                        "footer footer footer footer";
+    "biografia biografia biografia biografia"
+    "fotoInicio fotoInicio fotoInicio fotoInicio"
+    "footer footer footer footer";
 }
 
 li, a, button {
