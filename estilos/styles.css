@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400;500&display=swap");
+* {
+  Margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  font-weight: 500; }
+
+.contenedor {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header header header header" "biografia biografia biografia biografia" "fotoInicio fotoInicio fotoInicio fotoInicio" "footer footer footer footer"; }
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: black; }
+
+header {
+  display: grid;
+  background-color: #F1BB1D;
+  height: 100px;
+  margin: 0px;
+  margin-bottom: 30px;
+  grid-area: header; }
+
+.flotante {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 5%; }
+
+#logo {
+  cursor: pointer;
+  margin-right: auto; }
+
+.logo {
+  width: 100%; }
+
+.nav_links {
+  list-style: none; }
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 20px; }
+
+.nav_links li a {
+  transition: all 0.3s ease 0s; }
+
+.nav_links li a:hover {
+  color: #F1BB1D; }
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #F1BB1D;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s; }
+
+button:hover {
+  background-color: white; }
+
+.flotante {
+  background-color: #f8f8f8;
+  height: 40px;
+  margin: 30px 10%;
+  border-radius: 10px; }
+
+.quienesSomos {
+  font-size: 30px;
+  text-align: center; }
+
+.bio {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 300px; }
+
+.biografia {
+  grid-area: biografia;
+  margin-top: 20px; }
+
+.carrusel {
+  margin: 0% auto; }
+
+.fotoInicio {
+  justify-content: space-between;
+  text-align: center;
+  grid-area: fotoInicio; }
+
+.foto1 {
+  display: inline;
+  width: 500px;
+  height: 500px;
+  margin: 5px;
+  border-radius: 10px; }
+
+.foto2 {
+  display: inline;
+  width: 500px;
+  height: 500px;
+  margin: 5px;
+  border-radius: 10px; }
+
+.foto3 {
+  display: inline;
+  width: 500px;
+  height: 500px;
+  margin: 5px;
+  border-radius: 10px; }
+
+.footer {
+  background-color: #707070;
+  padding: 20px;
+  grid-area: footer; }
+
+.footer2 {
+  margin-left: 42px; }
+
+/* Fotografias */
+.fotoFoto {
+  justify-content: space-between;
+  text-align: center;
+  grid-area: fotoInicio;
+  margin: 80px 0px 0px 150px;
+  padding: 30px;
+  background-color: #F8F8F8;
+  border-radius: 10px; }
+
+.tituloIz {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 250px; }
+
+.fotoFoto1 {
+  justify-content: space-between;
+  text-align: center;
+  grid-area: fotoInicio;
+  padding: 20px;
+  background-color: #F8F8F8;
+  margin: 40px 150px 0px 0px; }
+
+.tituloDe {
+  font-size: 30px;
+  text-align: right;
+  margin-right: 250px; }
+
+.fotoFoto3 {
+  justify-content: space-between;
+  text-align: center;
+  grid-area: fotoInicio;
+  padding: 20px;
+  margin: 40px 0px 0px 150px;
+  background-color: #F8F8F8; }
+
+/* Servicios */
+.contenedor2 {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header header header header" "mainContainer mainContainer mainContainer2 mainContainer2" "footer footer footer footer"; }
+
+.mainContainer {
+  margin: 150px auto;
+  width: 700px;
+  background-color: #F8F8F8;
+  grid-area: mainContainer; }
+
+.mainContainer2 {
+  margin: 150px auto;
+  width: 700px;
+  background-color: #F8F8F8;
+  grid-area: mainContainer2; }
+
+table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse; }
+
+th,
+td {
+  padding: 25px; }
+
+thead {
+  background-color: #F1BB1D;
+  border-bottom: #707070 solid 2px; }
+
+tr:nth-child(even) {
+  background-color: #ddd; }
+
+tr:hover td {
+  background-color: #707070;
+  color: white; }
+
+/* Contacto */
+form {
+  background-color: #F8F8F8;
+  padding: 20px;
+  margin: 80px auto;
+  width: 440px;
+  border-radius: 3px; }
+
+input,
+textarea {
+  outline: none;
+  border: 1px;
+  border-radius: 2px;
+  background-color: white;
+  padding: 20px;
+  width: 380px;
+  border-color: #F1BB1D;
+  margin: 5px auto; }
+
+.cajas {
+  text-align: center; }
+
+/* DESAFIO SASS */
+.boton1 {
+  outline: none;
+  border: 1px;
+  border-radius: 2px;
+  background-color: #F1BB1D;
+  padding: 20px;
+  width: 200px;
+  margin: 5px auto; }
+
+.boton2 {
+  outline: none;
+  border: 1px;
+  border-radius: 2px;
+  background-color: #707070;
+  padding: 20px;
+  width: 200px;
+  margin: 5px auto; }
+
+.botones {
+  text-align: center; }
+
+.label {
+  text-align: center; }
+
+.biografia {
+  grid-area: biografia;
+  margin-top: 20px; }
+
+bio {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 300px; }
+
+quienesSomos {
+  font-size: 30px;
+  text-align: center; }

@@ -84,6 +84,7 @@ button:hover {
     background-color: #f8f8f8;
     height: 40px;
     margin: 30px 10%;
+    border-radius: 10px;
     
 }
 
@@ -95,10 +96,16 @@ button:hover {
 .bio{
     font-size: 20px;
     text-align: center;
+    margin: 10px 300px;
 }
 
 .biografia {
     grid-area: biografia;
+    margin-top: 20px;
+}
+
+.carrusel {
+margin: 0% auto;
 }
 
 .fotoInicio{
@@ -109,23 +116,26 @@ button:hover {
 
 .foto1{
     display: inline;
-    width: 400px;
-    height: 400px;
-    margin: 10px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 .foto2{
     display: inline;
-    width: 400px;
-    height: 400px;
-    margin: 10px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 .foto3{
     display: inline;
-    width: 400px;
-    height: 400px;
-    margin: 10px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    border-radius: 10px;
 }
 .footer{
     background-color: #707070;
@@ -139,6 +149,54 @@ button:hover {
 
 
 
+
+
+
+/* Fotografias */
+
+.fotoFoto{
+    justify-content: space-between;
+    text-align: center;
+    grid-area: fotoInicio;
+    margin: 80px 0px 0px 150px;
+    padding: 30px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+
+.tituloIz{
+	font-size: 30px;
+	text-align: left;
+    margin-left: 250px;
+}
+
+.fotoFoto1{
+    justify-content: space-between;
+    text-align: center;
+    grid-area: fotoInicio;
+    padding: 20px;
+    background-color: #F8F8F8;
+    margin: 40px 150px 0px 0px;
+}
+
+.tituloDe{
+	font-size: 30px;
+    text-align: right;
+    margin-right: 250px;
+}
+
+.fotoFoto3{
+    justify-content: space-between;
+    text-align: center;
+    grid-area: fotoInicio;
+    padding: 20px;
+    margin: 40px 0px 0px 150px;
+    background-color: #F8F8F8;
+}
+
+
+
+/* Servicios */
 
 .contenedor2 {
     display: grid;
@@ -186,10 +244,15 @@ tr:hover td{
     color: white;
 }
 
+
+
+
+/* Contacto */
+
 form{
     background-color: #F8F8F8;
     padding: 20px;
-    margin: 0px auto;
+    margin: 80px auto;
     width: 440px;
     border-radius: 3px;
 }
