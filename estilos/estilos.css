@@ -91,6 +91,7 @@ button:hover {
 .quienesSomos{
 	font-size: 30px;
 	text-align: center;
+    font-family: kayak_sans_bold;
 }
 
 .bio{
@@ -114,29 +115,13 @@ margin: 0% auto;
     grid-area: fotoInicio;
 }
 
-.foto1{
+.foto{
     display: inline;
     width: 500px;
-    height: 500px;
     margin: 5px;
     border-radius: 10px;
 }
 
-.foto2{
-    display: inline;
-    width: 500px;
-    height: 500px;
-    margin: 5px;
-    border-radius: 10px;
-}
-
-.foto3{
-    display: inline;
-    width: 500px;
-    height: 500px;
-    margin: 5px;
-    border-radius: 10px;
-}
 .footer{
     background-color: #707070;
     padding: 20px;
@@ -168,6 +153,7 @@ margin: 0% auto;
 	font-size: 30px;
 	text-align: left;
     margin-left: 250px;
+    font-family: kayak_sans_bold;
 }
 
 .fotoFoto1{
@@ -183,6 +169,7 @@ margin: 0% auto;
 	font-size: 30px;
     text-align: right;
     margin-right: 250px;
+    font-family: kayak_sans_bold;
 }
 
 .fotoFoto3{
