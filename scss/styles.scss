@@ -9,9 +9,14 @@
     font-weight: 500;
 }
 
-//variables
+//maps
 
-$colorPrincipal: #F1BB1D;
+$colores: (
+    primario: #F1BB1D,
+    secundario: #f8f8f8,
+    terciario: #707070
+);
+
 
 
 .contenedor {
@@ -32,9 +37,10 @@ button {
     color: black;
 }
 
+
 header {
     display: grid;
-    background-color: $colorPrincipal;
+    background-color: map-get($map: $colores, $key: primario);
     height: 100px;
     margin: 0px;
     margin-bottom: 30px;
@@ -71,13 +77,13 @@ header {
 }
 
 .nav_links li a:hover {
-    color: $colorPrincipal;
+    color: map-get($map: $colores, $key: primario);
 }
 
 button {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: $colorPrincipal;
+    background-color: map-get($map: $colores, $key: primario);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -89,7 +95,7 @@ button:hover {
 }
 
 .flotante {
-    background-color: #f8f8f8;
+    background-color: map-get($map: $colores, $key: secundario );
     height: 40px;
     margin: 30px 10%;
     border-radius: 10px;
@@ -100,7 +106,6 @@ button:hover {
 
 
 .biografia {
-    .biografia {
         grid-area: biografia;
         margin-top: 20px;
     }
@@ -113,32 +118,30 @@ button:hover {
         font-size: 30px;
         text-align: center;
         font-family: kayak_sans_bold;
-    }
 }
 
 
 .fotoInicio{
-    .fotoInicio {
-        justify-content: space-between;
-        text-align: center;
-        grid-area: fotoInicio;
+    justify-content: space-between;
+    text-align: center;
+    grid-area: fotoInicio;
     }
     .foto {
         display: inline;
         width: 500px;
         margin: 5px;
         border-radius: 10px;
-    }
 }
+
 .footer{
-    .footer {
-        background-color: #707070;
-        padding: 20px;
-        grid-area: footer;
+    background-color: map-get($map: $colores, $key: terciario);
+    padding: 20px;
+    grid-area: footer;
+
     }
     .footer2 {
         margin-left: 42px;
-    }
+    
 }
 
 // Fin de anidación
@@ -153,7 +156,7 @@ button:hover {
         grid-area: fotoInicio;
         margin: 80px 0px 0px 150px;
         padding: 30px;
-        background-color: #F8F8F8;
+        background-color: map-get($map: $colores, $key: secundario );
         border-radius: 10px;
     }
 
@@ -169,7 +172,7 @@ button:hover {
         text-align: center;
         grid-area: fotoInicio;
         padding: 20px;
-        background-color: #F8F8F8;
+        background-color: map-get($map: $colores, $key: secundario );
         margin: 40px 150px 0px 0px;
     }
 
@@ -186,7 +189,7 @@ button:hover {
         grid-area: fotoInicio;
         padding: 20px;
         margin: 40px 0px 0px 150px;
-        background-color: #F8F8F8;
+        background-color: map-get($map: $colores, $key: secundario );
     }
 
 
@@ -204,14 +207,14 @@ button:hover {
     .mainContainer {
         margin: 150px auto;
         width: 700px;
-        background-color: #F8F8F8;
+        background-color: map-get($map: $colores, $key: secundario );
         grid-area: mainContainer;
     }
 
     .mainContainer2 {
         margin: 150px auto;
         width: 700px;
-        background-color: #F8F8F8;
+        background-color: map-get($map: $colores, $key: secundario );
         grid-area: mainContainer2;
     }
 
@@ -227,7 +230,7 @@ button:hover {
     }
 
     thead {
-        background-color: $colorPrincipal;
+        background-color: map-get($map: $colores, $key: primario);
         border-bottom: #707070 solid 2px;
     }
 
@@ -236,7 +239,7 @@ button:hover {
     }
 
     tr:hover td {
-        background-color: #707070;
+        background-color: map-get($map: $colores, $key: terciario);
         color: white;
     }
 
@@ -246,7 +249,7 @@ button:hover {
     /* Contacto */
 
     form {
-        background-color: #F8F8F8;
+        background-color: map-get($map: $colores, $key: secundario );
         padding: 20px;
         margin: 80px auto;
         width: 440px;
@@ -261,7 +264,7 @@ button:hover {
         background-color: white;
         padding: 20px;
         width: 380px;
-        border-color: $colorPrincipal;
+        border-color: map-get($map: $colores, $key: primario);
         margin: 5px auto;
     }
 
@@ -269,27 +272,23 @@ button:hover {
         text-align: center;
     }
 
-    .boton1 {
+    @mixin botones ($fondo){
         outline: none;
         border: 1px;
         border-radius: 2px;
-        background-color: $colorPrincipal;
+        background-color: $fondo;
         padding: 20px;
         width: 200px;
-        margin: 5px auto;
+        margin: 5px auto;   
+    }
 
+    .boton1 {
+        @include botones(map-get($map: $colores, $key: primario))
     }
 
     .boton2 {
-        outline: none;
-        border: 1px;
-        border-radius: 2px;
-        background-color: #707070;
-        padding: 20px;
-        width: 200px;
-        margin: 5px auto;
+        @include botones(map-get($map: $colores, $key: terciario))
     }
-
     .botones {
         text-align: center;
     }
@@ -297,3 +296,15 @@ button:hover {
     .label {
         text-align: center;
     }
+
+
+    // Videos
+
+    .fotoVideo {
+        @extend .fotoInicio
+    }
+        .fotoV{
+            @extend .foto
+        }
+
+

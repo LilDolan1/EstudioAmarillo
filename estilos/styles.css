@@ -8,10 +8,7 @@
 .contenedor {
   display: grid;
   gap: 10px;
-  grid-template-areas: "header header header header"
- "biografia biografia biografia biografia"
- "fotoInicio fotoInicio fotoInicio fotoInicio"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "biografia biografia biografia biografia" "fotoInicio fotoInicio fotoInicio fotoInicio" "footer footer footer footer"; }
 
 li,
 a,
@@ -73,55 +70,47 @@ button:hover {
   margin: 30px 10%;
   border-radius: 10px; }
 
-.biografia .biografia {
+.biografia {
   grid-area: biografia;
   margin-top: 20px; }
 
-.biografia .bio {
+.bio {
   font-size: 20px;
   text-align: center;
   margin: 10px 300px; }
 
-.biografia .quienesSomos {
+.quienesSomos {
   font-size: 30px;
   text-align: center;
   font-family: kayak_sans_bold; }
 
-.fotoInicio .fotoInicio {
+.fotoInicio, .fotoVideo {
   justify-content: space-between;
   text-align: center;
   grid-area: fotoInicio; }
 
-.fotoInicio .foto {
+.foto, .fotoV {
   display: inline;
   width: 500px;
   margin: 5px;
   border-radius: 10px; }
 
-.footer .footer {
+.footer {
   background-color: #707070;
   padding: 20px;
   grid-area: footer; }
 
-.footer .footer2 {
+.footer2 {
   margin-left: 42px; }
 
 /* Fotografias */
-
-.foto {
-  display: inline;
-  width: 500px;
-  margin: 5px;
-  border-radius: 10px;
-}
-
 .fotoFoto {
   justify-content: space-between;
   text-align: center;
   grid-area: fotoInicio;
   margin: 80px 0px 0px 150px;
   padding: 30px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   border-radius: 10px; }
 
 .tituloIz {
@@ -135,7 +124,7 @@ button:hover {
   text-align: center;
   grid-area: fotoInicio;
   padding: 20px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   margin: 40px 150px 0px 0px; }
 
 .tituloDe {
@@ -150,26 +139,24 @@ button:hover {
   grid-area: fotoInicio;
   padding: 20px;
   margin: 40px 0px 0px 150px;
-  background-color: #F8F8F8; }
+  background-color: #f8f8f8; }
 
 /* Servicios */
 .contenedor2 {
   display: grid;
   gap: 10px;
-  grid-template-areas: "header header header header"
- "mainContainer mainContainer mainContainer2 mainContainer2"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "mainContainer mainContainer mainContainer2 mainContainer2" "footer footer footer footer"; }
 
 .mainContainer {
   margin: 150px auto;
   width: 700px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   grid-area: mainContainer; }
 
 .mainContainer2 {
   margin: 150px auto;
   width: 700px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   grid-area: mainContainer2; }
 
 table {
@@ -194,7 +181,7 @@ tr:hover td {
 
 /* Contacto */
 form {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 20px;
   margin: 80px auto;
   width: 440px;
@@ -237,20 +224,3 @@ textarea {
 
 .label {
   text-align: center; }
-
-  @media screen and (max-width: 768px) {
-    .contenedor2 {
-        grid-template-areas: "header header header header"
-                            "mainContainer mainContainer mainContainer mainContainer"
-                            "mainContainer2 mainContainer2 mainContainer2 mainContainer2"
-                            "footer footer footer footer";
-    }
-    
-    .contenedor {
-        grid-template-areas: "header header header header"
-                        "biografia biografia biografia biografia"
-                        "fotoInicio fotoInicio fotoInicio fotoInicio"
-                        "footer footer footer footer";
-                        
-    
-}
