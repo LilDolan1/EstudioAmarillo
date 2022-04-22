@@ -14,7 +14,8 @@
 $colores: (
     primario: #F1BB1D,
     secundario: #f8f8f8,
-    terciario: #707070
+    terciario: #707070,
+    footer: #ddd
 );
 
 
@@ -134,13 +135,20 @@ button:hover {
 }
 
 .footer{
-    background-color: map-get($map: $colores, $key: terciario);
-    padding: 20px;
+    background-color: map-get($map: $colores, $key: primario);
+    padding-top: 5px;
     grid-area: footer;
+    
 
     }
     .footer2 {
-        margin-left: 42px;
+        background-color: map-get($map: $colores, $key: footer );
+        height: 100px;
+    
+    .logoFooter {
+        width: 120px;
+        margin: 20px auto auto 20px;
+    }
     
 }
 
@@ -301,7 +309,9 @@ button:hover {
     // Videos
 
     .fotoVideo {
+        margin-top: 80px;
         @extend .fotoInicio
+        
     }
         .fotoV{
             @extend .foto

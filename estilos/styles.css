@@ -96,12 +96,16 @@ button:hover {
   border-radius: 10px; }
 
 .footer {
-  background-color: #707070;
-  padding: 20px;
+  background-color: #F1BB1D;
+  padding-top: 5px;
   grid-area: footer; }
 
 .footer2 {
-  margin-left: 42px; }
+  background-color: #ddd;
+  height: 100px; }
+  .footer2 .logoFooter {
+    width: 120px;
+    margin: 20px auto auto 20px; }
 
 /* Fotografias */
 .fotoFoto {
@@ -224,3 +228,6 @@ textarea {
 
 .label {
   text-align: center; }
+
+.fotoVideo {
+  margin-top: 80px; }
