@@ -81,15 +81,14 @@ button:hover {
 
 .quienesSomos {
   font-size: 30px;
-  text-align: center;
-  font-family: kayak_sans_bold; }
+  text-align: center; }
 
-.fotoInicio, .fotoVideo {
+.fotoInicio, .videoVideo {
   justify-content: space-between;
   text-align: center;
   grid-area: fotoInicio; }
 
-.foto, .fotoV {
+.foto {
   display: inline;
   width: 500px;
   margin: 5px;
@@ -229,5 +228,12 @@ textarea {
 .label {
   text-align: center; }
 
-.fotoVideo {
+.videoVideo {
+  background-color: #f8f8f8;
   margin-top: 80px; }
+
+.video {
+  display: inline;
+  width: 500px;
+  margin: 100px;
+  border-radius: 10px; }

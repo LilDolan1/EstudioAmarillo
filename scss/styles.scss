@@ -118,7 +118,6 @@ button:hover {
     .quienesSomos {
         font-size: 30px;
         text-align: center;
-        font-family: kayak_sans_bold;
 }
 
 
@@ -306,15 +305,19 @@ button:hover {
     }
 
 
-    // Videos
+    // Videoss
 
-    .fotoVideo {
+    .videoVideo {
+        background-color: map-get($map: $colores, $key: secundario );
         margin-top: 80px;
         @extend .fotoInicio
         
     }
-        .fotoV{
-            @extend .foto
+        .video{
+            display: inline;
+            width: 500px;
+            margin: 100px;
+            border-radius: 10px;
         }
 
 
